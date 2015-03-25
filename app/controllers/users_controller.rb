@@ -1,5 +1,4 @@
-class UsersController < ApplicationController
-  before_filter :authenticate_user!
+class UsersController < RestrictedAccessController
   before_filter :admin_only, :except => :show
 
   def index

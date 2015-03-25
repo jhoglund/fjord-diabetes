@@ -1,6 +1,8 @@
 <div class="authform">
   <%= form_for(resource, :as => resource_name, :url => session_path(resource_name), :html => { :role => 'form'}) do |f| %>
     <h3>Sign in</h3>
+		<p>This is the home of Fjord Diabetes project and access is restricted to employee's of Accenture or Fjord. To get access, just <%= link_to 'Sign up', new_registration_path(resource_name)  %> using your Accenture/Fjord email address.
+    
     <%= devise_error_messages! %>
     <div class="form-group">
       <%- if devise_mapping.registerable? %>
