@@ -12,7 +12,7 @@ group :development, :test do
   gem 'web-console', '~> 2.0'
   gem 'spring'
 end
-gem 'bootstrap-sass'
+gem 'foundation-rails'
 gem 'devise'
 gem 'haml-rails'
 gem 'puma'
@@ -25,6 +25,7 @@ group :development do
   gem 'rails_layout'
 end
 group :development, :test do
+  gem 'pg'
   gem 'sqlite3'
 end
 group :production do
