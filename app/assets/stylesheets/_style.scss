@@ -1,0 +1,282 @@
+.authform {
+	width:400px;
+	margin:0 auto;
+}
+
+#header-img{
+	width: 100%;
+	margin-bottom: 10px;
+}
+
+#timeline-embed {
+	position: relative;
+	 z-index: -1;
+}
+
+
+
+nav.top-bar {
+text-align:center;
+}
+
+.top-bar-section ul {
+	display: inline-block;
+}
+
+.top-bar-section ul li {
+	a:hover{
+		background: white;
+		border-bottom: solid #cb4948 3px;
+	}
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button) {
+		background: white;
+		width: 100%;
+		border-bottom: solid red 3px;
+}
+
+.top-bar-section li.active:not(.has-form) a:not(.button):hover {
+		background: white;
+		border-bottom: solid #cb4948 3px;
+}
+
+
+nav.top-bar.utility-bar {
+	background:black;
+	.top-bar-section ul {
+		li {
+			background:black;
+			a {
+				background: none;
+				color: white;
+			}
+			a:hover{
+				background: red;
+				border-bottom: none;
+			}
+		}
+	}
+}
+
+.fullwidth {
+	min-height: 300px;
+	img{
+		display: block;
+		margin: auto;
+	}
+	.wide{
+		min-width: 100%;
+	}
+
+}
+.bgr {
+	  background: url(/assets/header1.jpg) no-repeat center top;
+		padding: 60px 0 50px 0;
+	  -webkit-background-size: cover;
+	  -moz-background-size: cover;
+	  -o-background-size: cover;
+	  background-size: cover;
+	  min-height: 436px;
+	}
+
+
+h1, h2, h3, h4{
+	text-align: center;
+}
+h1 {
+	font-size: 6.8rem;
+	color: white;
+	letter-spacing: 1.2rem;
+	font-weight: 800;
+	line-height: 7rem;
+	margin-top: 7rem;
+	}
+@media only screen and (max-width: 40.063em){
+h1 {
+  	font-size: 2.8rem;
+  	line-height: 0rem;
+  	margin-top: 45%;}}
+
+.animated {
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+    -webkit-animation-timing-function: ease-in;
+    animation-timing-function: ease-in;
+}
+
+@-webkit-keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+}
+.fadeIn {
+    -webkit-animation-name: fadeIn;
+}
+
+h2.slogan {
+	margin-top: 0;
+	font-size: 1.6rem;
+	color: white;
+	font-style: italic;
+	font-weight:200;
+	letter-spacing: 0.8rem;
+}
+@media only screen and (max-width: 40.063em){
+h2.slogan  {
+		margin-top: 1.5rem;
+  	font-size: 1rem;}}
+
+h2 {
+	margin-top: 0;
+  font-size: 1.3rem;
+	color: #747474;
+  letter-spacing: 0.07rem;
+}
+h2.archetype {
+	font-weight: 100;
+  font-size: 1rem;
+  margin-top:20px;
+}
+h3 {
+	font-size: 2rem;
+	margin-top: 2rem;
+	letter-spacing: 0.2rem;
+	font-weight: 100;
+	font-style: italic;
+}
+h4 {
+	font-size: 2rem;
+	color: white;
+	font-weight: 100;
+	font-style: italic;
+}
+
+a{
+	color: #cb4948;
+	font-weight:200;
+}
+
+a:hover{
+	color: #aa4746;
+	font-weight:200;
+}
+
+.sub {
+	text-align: left;
+	margin-top: -10px;
+}
+@media only screen and (max-width: 40.063em){
+.sub  {
+		margin-top: 1.5rem;}}
+
+.quote {
+	font-style: italic;
+	text-align: center;
+	margin-bottom: 50px;
+	font-weight:200;
+	color: #4f4f4f;
+}
+
+.icon {
+	padding-top:10px;
+	width:60px;
+}
+
+.footer {
+	font-style: italic;
+	text-align: center;
+	font-size: 0.7rem;
+	font-weight:100;
+}
+.name {
+  font-style: italic;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 0px;
+	font-weight:100;
+}
+.title {
+  font-style: italic;
+  text-align: center;
+  font-size: 0.8rem;
+	font-weight:100;
+}
+
+.block{
+	padding-top: 2.5rem !important;
+	margin-bottom: 1rem;
+}
+
+.small-image{
+	margin-bottom: 10px;
+}
+
+.orbit-container .orbit-prev span,
+.orbit-container .orbit-next span {
+    color: #cecece;
+    background: transparent;
+    border: none;
+    font-size: 100px;
+    font-weight: 100;
+    text-indent: 0;
+    margin-top: -62px;
+}
+
+.orbit-container .orbit-prev {
+    background-color: transparent;
+}
+.orbit-container .orbit-prev span:before {
+    content: "\2039";
+}
+.orbit-container .orbit-next {
+    background-color: transparent;
+}
+.orbit-container .orbit-next span:before {
+    content: "\203A";
+}
+
+.panel{
+	margin: 0.2rem;
+	min-height: 90px;
+	.number {
+		paddin-top: 40px;
+		font-size: 2rem;
+		font-weight: 100;
+		line-height: 40px;
+	}
+	.w {
+		font-size: 0.5rem;
+	}
+	.tool	 {
+		cursor: pointer;
+		color: #000000;
+		font-size: 0.9rem;
+		line-height: 1rem;
+		font-weight: 300;
+	}
+	p {
+		color: #000000;
+	}
+}
+
+.dark{
+	background-color: #d9dad9;
+}
+.red {
+	background-color: $secondary-color;
+}
+
+.vco-storyjs {
+	h2 {text-align: left;}
+	h3 {text-align: left;}
+	}
+
+footer{
+	text-align: center;
+}
