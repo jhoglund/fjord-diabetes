@@ -10,4 +10,7 @@ class User < ActiveRecord::Base
   # :confirmable, :lockable, :timeoutable and :omniauthable
   devise :database_authenticatable, :registerable, :confirmable,
          :recoverable, :rememberable, :trackable, :validatable
+         
+  validates_format_of :email, :with => /@fjordnet\.com|@accenture\.com/, :message => 'is not a valid Fjord or Accenture email address'
+  
 end
